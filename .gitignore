@@ -1,9 +1,9 @@
 .DS_Store
 **/.DS_Store
 
-# Local Obsidian UI state
-.obsidian/workspace.json
-wiki/.obsidian/workspace.json
+# Local Obsidian configuration and UI state
+.obsidian/
+**/.obsidian/
 
 # PuddingClaw local runtime state, mirrors, and staging data
 .puddingclaw/
