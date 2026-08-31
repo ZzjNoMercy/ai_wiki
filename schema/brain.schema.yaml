@@ -1,0 +1,64 @@
+schema_id: puddingclaw-wiki
+bundle_version: 0.4.0
+gbrain_pack:
+  path: gbrain/puddingclaw-wiki/pack.yaml
+  name: puddingclaw-wiki
+  version: 0.4.0
+  manifest_sha256: 3508c4ee2bd76cce5149df90d78ac9742c3c8455bbdd95a7f95bc45e06a978b2
+wiki:
+  layout: typed_directories
+  allowed_page_types:
+    - system
+    - debate
+    - research_paper
+    - software_framework
+    - ai_model
+    - programming_language
+    - engineering_practice
+    - person
+    - company
+    - media
+    - tweet
+    - social-digest
+    - analysis
+    - atom
+    - concept
+    - source
+    - deal
+    - email
+    - slack
+    - writing
+    - project
+    - note
+    - event
+    - diary
+  allowed_link_types:
+    - supports
+    - challenges
+    - introduces
+    - implements
+    - uses
+    - depends_on
+    - evaluates
+    - applies_to
+    - partner_of
+    - relates_to
+    - mentions
+    - discusses
+    - founded
+    - works_at
+    - invested_in
+    - sourced_from
+    - derived_from
+    - supersedes
+    - redirects_to
+    - attended
+    - authored
+    - attributed_to
+  required_frontmatter:
+    - title
+    - type
+    - sources
+    - created
+    - updated
+    - schema_version
