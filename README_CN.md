@@ -64,4 +64,3 @@ AI Wiki 收录 LLM、AI Agent、模型外层执行系统（Harness）、软件�
 - 每个新增或更新页面必须引用至少一个本次选中的 Raw 快照。
 - `sources` 使用 manifest 中的精确 `snapshot_path`，不要添加 `raw/` 前缀。
 - 所有 wikilink 都必须包含类型目录，例如 `[[concepts/compiled-rag]]`。
-- `.puddingclaw/` 和 `.obsidian/` 是本机运行或编辑器状态，不纳入版本控制。

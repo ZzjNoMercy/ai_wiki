@@ -64,4 +64,3 @@ Key constraints:
 - Every new or updated page must cite at least one Raw snapshot selected for that ingestion.
 - Use the exact manifest `snapshot_path` in `sources`; do not prefix it with `raw/`.
 - Every wikilink must include its type directory, for example `[[concepts/compiled-rag]]`.
-- `.puddingclaw/` and `.obsidian/` contain local runtime or editor state and are not versioned.
