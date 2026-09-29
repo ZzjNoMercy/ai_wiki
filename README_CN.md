@@ -27,8 +27,8 @@ AI Wiki 收录 LLM、AI Agent、模型外层执行系统（Harness）、软件�
 | [`wiki/log.md`](wiki/log.md) | 仅追加的摄取日志 |
 | [`raw/`](raw/) | 只读原始材料与不可变快照 |
 | [`raw/manifest.jsonl`](raw/manifest.jsonl) | Raw 快照清单及完整性信息 |
-| [`schema/`](schema/) | 页面类型、关系类型与 frontmatter 约束 |
-| [`AGENTS.md`](AGENTS.md) | AI Agent 的操作契约与分类规则 |
+| [`wiki.schema.json`](wiki.schema.json) | 唯一的页面类型、目录与 frontmatter 约束 |
+| [`AGENTS.md`](AGENTS.md) | AI Agent 的操作与证据边界 |
 
 当前知识主要分布在以下目录：
 
@@ -50,10 +50,10 @@ AI Wiki 收录 LLM、AI Agent、模型外层执行系统（Harness）、软件�
 
 ## 添加内容
 
-1. 阅读 [`AGENTS.md`](AGENTS.md) 和当前 [`schema/brain.schema.yaml`](schema/brain.schema.yaml)。
+1. 阅读 [`AGENTS.md`](AGENTS.md) 和根目录的 [`wiki.schema.json`](wiki.schema.json)。
 2. 选择本次允许使用的 Raw 快照，并核对其在 `raw/manifest.jsonl` 中的精确 `snapshot_path`。
 3. 规划长期实体、稳定主题、页面类型和有直接证据支持的关系。
-4. 通过 PuddingClaw 的 staging/publish 流程生成或更新 Wiki 页面。
+4. 在独立候选区生成页面，审阅固定候选及 Wiki diff 后再发布。
 5. 更新索引覆盖情况，并向 `wiki/log.md` 追加一条摄取记录。
 6. 发布前检查 frontmatter、页面路径、完整 wikilink、断链和事实归属。
 

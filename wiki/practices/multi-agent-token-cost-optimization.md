@@ -4,8 +4,9 @@ type: engineering_practice
 sources:
   - knowledge-file-4be80edb57/knowledge-imported-20260825-10-multi-agent-50-.md-c353f4a9b1-941251b63b09.md
   - conversation-correction-codex-multi-agent-token-20260830-1c071d3fe3/multi-agent-token-wiki-scope-v2-c875e42ad4-adddccc75aa9.md
+  - read-later-4445b9b74d/later_81b795f2b793454db6ae5691-a15e695237-16d194673310.md
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-09-02
 schema_version: 0.4.0
 ---
 
@@ -46,6 +47,17 @@ Multi-Agent 系统把需求分析、编码、审查、测试和视觉验证分�
 8. 上游已经加载并写入技术方案的信息由文档向下游传递，子 Agent 不再重复加载同一 Skill 或长期记忆。
 9. 使用 [[frameworks/rtk|rtk]] 等确定性过滤器，在 CLI 输出进入模型上下文前压缩噪声。
 10. 无数据依赖的工具调用和测试批次并行执行，减少因串行调用产生的历史重复打包轮次。
+
+### Uber 的独立规模化证据（2026-08）
+
+Uber 的生产数据为「工具 Schema 按需加载、把确定性循环移出模型上下文、按 Agent 生命周期配置缓存」提供了独立证据：
+
+- 当会话安装 100 多个工具时，标准 MCP 预加载约增加 50K–70K Token 的初始 Schema 开销，并在后续上下文 Turn 中重复发送。Uber 用 Tool Search 与 CLI 动态解析工具，使 1,000 多个 Gateway MCP 工具无需常驻会话 Schema。
+- Code Mode 把 SQL 等协议中的提交、2–5 次轮询和结果获取合并为子进程脚本，只返回摘要。文章的单项样例分别节省 55%、58%、71% 和 59% Token；宽表约节省 100%，批量流程超过 90%。这些是具体工作流结果，不应当作所有工具调用的固定比例。
+- 主交互线程常出现超过 5 分钟的空闲间隔，因此使用 1 小时 Prompt Cache TTL；短生命周期 Sub-Agent 保留 5 分钟 TTL。TTL 应由实际 Turn 间隔与供应商读写价格决定，而不是全系统统一。
+- 主 Agent 负责拆解、委派和判断结果，Sub-Agent 默认可使用较弱、较便宜的模型执行边界清楚的局部任务；是否降级仍需由真实任务 Benchmark 验证。
+
+这组证据对应 [[systems/uber-software-factory|Uber Software Factory]]，并进一步说明 Token 优化应由 [[concepts/harness|Harness]] 在工具解析、执行循环、缓存和模型路由层统一实施。
 
 ## 验证
 

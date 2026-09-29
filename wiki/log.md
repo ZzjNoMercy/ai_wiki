@@ -205,3 +205,114 @@
 - model: codex:gpt-5
 - raw: conversation-correction-codex-multi-agent-token-20260830-1c071d3fe3/multi-agent-token-wiki-scope-v2-c875e42ad4-adddccc75aa9.md, conversation-correction-session-6afa50dc1ea8-10d3fb8d76/query-18f0f64be0c2-pi-only-7374e46112-8cbd01cdcc8e.md, conversation-synthesis-codex-local-source-review-e6e0a886b3/effectledger-pi-maka-durable-agent-interpreter-20260825-6fb80d55eb-c745a08e4e5a.md, conversation-synthesis-fff-puddingteams-20260828-9bafcf50d8/fff-agent-code-search-practice-b33c55560c-3388215c0fa6.md, conversation-synthesis-session-76a1c4236a85-bb4891cbfe/query-152b4c99cc6b-0791a30d01-b37848b8a83a.md, knowledge-file-4be80edb57/knowledge-imported-20260722-harness-profile-tool-description-overrides.md-9fe983cc93-cfbd16066b26.md, manual-upload-785681c302/opencode-agent-compact-engineering-practice.md-1785921032328-20d84d7559-8130ff6bba3a.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md, read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
 - added_or_updated: [[media/harness-engineering-for-self-improvement]], [[media/deepseek-of-deepseek-harness]], [[concepts/recursive-self-improvement]], [[concepts/loop-engineering]], [[frameworks/deepagents]], [[frameworks/deepseek-harness]], [[frameworks/long-horizon-harness]], [[frameworks/pi-agent]], [[practices/agent-context-compaction]], [[practices/durable-effect-ledger]], [[practices/harness-profile-tool-description-overrides]], [[systems/maka]], [[systems/opencode]], [[systems/puddingclaw]], [[systems/puddingteams]]
+## [2026-08-31] ingest | 收录 Warp 基于 Skill 的 Agent 自我改进闭环，并建立 Agent Self-Improvement 父概念及相关页关联
+
+- job_id: wiki-2f1cf47b343c4d8f
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f81f75b1a77ac3496ab92332eb3611492cf0fb483a9f57d520eb54a04bca2b47
+- model: gpt-5.6-sol
+- raw: knowledge-file-4be80edb57/knowledge-imported-20260830-how-warp-builds-self-improving-agents-on-claude---claude-by--d0eb9dd10a-d24d9bd248b7.md, read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md
+- added_or_updated: [[media/how-warp-builds-self-improving-agents-on-claude]], [[sources/claude-blog]], [[concepts/agent-self-improvement]], [[practices/skill-based-agent-self-improvement-loop]], [[concepts/recursive-self-improvement]], [[media/harness-engineering-for-self-improvement]], [[media/deepseek-of-deepseek-harness]], [[frameworks/deepseek-harness]]
+## [2026-09-02] ingest | 编译 Uber Software Factory：四层执行形态、产品化阶梯、结果经济性与 Benchmark 路由
+
+- job_id: wiki-62f7d06fafd64de1
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: 39bb17e0625aa3fd82c82d809a5a6426460e04a1f178d1d043f2c1611503ed36
+- model: codex-gpt-5.6
+- raw: read-later-4445b9b74d/later_81b795f2b793454db6ae5691-a15e695237-16d194673310.md
+- added_or_updated: [[media/running-a-software-factory-efficiently-at-uber-scale]], [[sources/uber-blog]], [[systems/uber-software-factory]], [[practices/agent-workload-productization-ladder]], [[practices/outcome-based-agent-economics]], [[practices/benchmark-driven-agent-model-routing]], [[concepts/harness]], [[practices/multi-agent-token-cost-optimization]]
+## [2026-09-10] ingest | 建立 Agent 基础概念页，以能力组成与系统架构两种公式统一定义 Agent，并关联 Harness、Loop Engineering、Multi-Agent、Agent Self-Improvement 及两篇来源文章。
+
+- job_id: wiki-4645246b6e3c4661
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md
+- added_or_updated: [[concepts/agent]], [[concepts/harness]], [[media/harness-engineering-for-self-improvement]], [[media/deepseek-of-deepseek-harness]], [[concepts/agent-self-improvement]]
+## [2026-09-12] ingest | 补充 Agent 两种组成公式的正文内 Media 来源链接，使公式可在出现位置直接追溯原文。
+
+- job_id: wiki-5831931f01ed4135
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md
+- added_or_updated: [[concepts/agent]]
+## [2026-09-13] ingest | 收录 Stanford CS 329Z Agent 工程课程主页，并在 Agent 概念正文中增加相关课程入口。
+
+- job_id: wiki-58a1f2fc8a544a4f
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: web-capture-cs329z-stanford-20c64e618d/cs329z-engineering-ai-agents-course-homepage-20260914-ddc1edf11e-50d0e0774ed8.md
+- added_or_updated: [[media/cs329z-engineering-ai-agents]], [[concepts/agent]]
+## [2026-09-13] ingest | 补充 Harness 的近期趋势、能力内化与外部职责边界：记录元方法论演进、Harness 与模型的双向促进，并解释 manual prompt tricks 及外部任务契约为何仍需保留。
+
+- job_id: wiki-25e2fcd0be884aab
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
+- added_or_updated: [[concepts/harness]]
+## [2026-09-13] ingest | 重组 Harness 演进趋势章节：在统一标题下先区分 Lilian Weng 的方向预测，再呈现 Wiki 的 2026-08 工程阶段判断。
+
+- job_id: wiki-cda73fc493534485
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md, conversation-synthesis-session-76a1c4236a85-bb4891cbfe/query-152b4c99cc6b-0791a30d01-b37848b8a83a.md, conversation-synthesis-codex-local-source-review-e6e0a886b3/effectledger-pi-maka-durable-agent-interpreter-20260825-6fb80d55eb-c745a08e4e5a.md, manual-upload-785681c302/opencode-agent-compact-engineering-practice.md-1785921032328-20d84d7559-8130ff6bba3a.md, knowledge-file-4be80edb57/knowledge-imported-20260722-harness-profile-tool-description-overrides.md-9fe983cc93-cfbd16066b26.md, conversation-synthesis-fff-puddingteams-20260828-9bafcf50d8/fff-agent-code-search-practice-b33c55560c-3388215c0fa6.md, read-later-4445b9b74d/later_81b795f2b793454db6ae5691-a15e695237-16d194673310.md
+- added_or_updated: [[concepts/harness]]
+## [2026-09-13] ingest | 修复 Harness 核心职责的 Markdown 表格分栏问题：改为响应式列表，保留原有职责说明和带显示名的 Wiki 关系。
+
+- job_id: wiki-e6f9e05308d141ca
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md, read-later-4445b9b74d/later_84091bcce34b4bab91a7ad57-f00ab3bff8-26d6d03086bf.md, conversation-synthesis-session-76a1c4236a85-bb4891cbfe/query-152b4c99cc6b-0791a30d01-b37848b8a83a.md, conversation-synthesis-codex-local-source-review-e6e0a886b3/effectledger-pi-maka-durable-agent-interpreter-20260825-6fb80d55eb-c745a08e4e5a.md, manual-upload-785681c302/opencode-agent-compact-engineering-practice.md-1785921032328-20d84d7559-8130ff6bba3a.md, knowledge-file-4be80edb57/knowledge-imported-20260722-harness-profile-tool-description-overrides.md-9fe983cc93-cfbd16066b26.md, conversation-synthesis-fff-puddingteams-20260828-9bafcf50d8/fff-agent-code-search-practice-b33c55560c-3388215c0fa6.md, read-later-4445b9b74d/later_81b795f2b793454db6ae5691-a15e695237-16d194673310.md
+- added_or_updated: [[concepts/harness]]
+## [2026-09-22] ingest | 补充 Agent Self-Improvement 的阶段性算法判断：经典优化外循环借助 LLM 的语义提案能力，把搜索对象扩展到自然语言、代码与 Agent 架构，并说明其效率与验证边界。
+
+- job_id: wiki-d126cf0f6572441f
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
+- added_or_updated: [[concepts/agent-self-improvement]]
+## [2026-09-27] ingest | 将 Lilian Weng 提出的七项未来挑战整理为 Harness 自我改进工程检查框架，并从 Harness 概念页和来源 Media 建立入口。
+
+- job_id: wiki-a0456a6aa1724a70
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
+- added_or_updated: [[concepts/harness]], [[media/harness-engineering-for-self-improvement]], [[practices/harness-self-improvement-challenge-checklist]]
+## [2026-09-27] ingest | 补充 SI 易自动验证与难量化目标的例子，并明确人类在未来 Harness 中上移后的职责。
+
+- job_id: wiki-a4b7fd906ef94fec
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
+- added_or_updated: [[practices/harness-self-improvement-challenge-checklist]]
+## [2026-09-27] ingest | 扩充 Harness Engineering for Self-Improvement 阅读页，新增证据驱动的受约束 Harness 演化工程实践，并从 Harness、Agent Self-Improvement 与七项挑战检查框架建立双向导航。
+
+- job_id: wiki-f547c235a3cc493c
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: f23af1076aa1a7f0eaebf528e48d277aea0cf8fa19f87a89b5d05b2b7dad4d71
+- model: codex:gpt-5
+- raw: read-later-4445b9b74d/later_abadf6c614f140da9b1d1fb5-0fce80db03-bcc916448a53.md
+- added_or_updated: [[media/harness-engineering-for-self-improvement]], [[practices/evidence-driven-bounded-harness-evolution]], [[concepts/harness]], [[concepts/agent-self-improvement]], [[practices/harness-self-improvement-challenge-checklist]]
+## [2026-09-29] ingest | 收录 Harness-Zero 论文与跨 Harness 行为蒸馏工程实践
+
+- job_id: wiki-fd8d76f12eec42b6
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: 39bb17e0625aa3fd82c82d809a5a6426460e04a1f178d1d043f2c1611503ed36
+- model: gpt-6-sol
+- raw: manual-upload-harness-zero-paper-a648d690f9/arxiv-2609-24974-v1-20ecc4840e-0cbb660ab65d.md
+- added_or_updated: [[papers/harness-zero]], [[practices/cross-harness-behavior-distillation]]
+## [2026-09-29] retire | 退役三篇不再需要的 PuddingTeams 搜索实践页；保留系统页作为入口
+
+- job_id: wiki-retire-46eb74859ffc4ab5
+- schema: puddingclaw-wiki@0.4.0
+- bundle_hash: 39bb17e0625aa3fd82c82d809a5a6426460e04a1f178d1d043f2c1611503ed36
+- retired: `practices/controlled-search-verification` -> [[systems/puddingteams]], `practices/search-session-state-isolation` -> [[systems/puddingteams]], `practices/workspace-search-security-boundary` -> [[systems/puddingteams]]
+- links_updated_in: none

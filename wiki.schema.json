@@ -1,0 +1,33 @@
+{
+  "formatVersion": 1,
+  "schemaId": "ai-wiki",
+  "revision": 1,
+  "name": "AI Wiki",
+  "description": "LLM、Agent、Harness 与相关研究的证据驱动 Wiki",
+  "entities": [
+    { "type": "concept", "directory": "concepts", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "system", "directory": "systems", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "software_framework", "directory": "frameworks", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "engineering_practice", "directory": "practices", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "research_paper", "directory": "papers", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "media", "directory": "media", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "source", "directory": "sources", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "company", "directory": "companies", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] },
+    { "type": "analysis", "directory": "analysis", "fields": [{ "name": "type", "type": "text", "required": true }, { "name": "title", "type": "text", "required": true }, { "name": "sources", "type": "text_list", "required": true }] }
+  ],
+  "relations": [
+    { "type": "relates_to", "endpoints": [{ "from": "concept", "to": "concept" }, { "from": "concept", "to": "engineering_practice" }, { "from": "concept", "to": "media" }, { "from": "concept", "to": "software_framework" }, { "from": "concept", "to": "system" }, { "from": "engineering_practice", "to": "concept" }, { "from": "engineering_practice", "to": "engineering_practice" }, { "from": "media", "to": "concept" }, { "from": "research_paper", "to": "concept" }, { "from": "research_paper", "to": "engineering_practice" }, { "from": "software_framework", "to": "concept" }, { "from": "software_framework", "to": "engineering_practice" }, { "from": "system", "to": "concept" }, { "from": "system", "to": "system" }], "requiresEvidence": true },
+    { "type": "discusses", "endpoints": [{ "from": "concept", "to": "media" }, { "from": "media", "to": "concept" }, { "from": "media", "to": "engineering_practice" }], "requiresEvidence": true },
+    { "type": "applies_to", "endpoints": [{ "from": "concept", "to": "concept" }, { "from": "engineering_practice", "to": "concept" }, { "from": "engineering_practice", "to": "software_framework" }, { "from": "engineering_practice", "to": "system" }, { "from": "software_framework", "to": "concept" }, { "from": "software_framework", "to": "system" }], "requiresEvidence": true },
+    { "type": "implements", "endpoints": [{ "from": "software_framework", "to": "concept" }, { "from": "software_framework", "to": "engineering_practice" }, { "from": "system", "to": "engineering_practice" }], "requiresEvidence": true },
+    { "type": "uses", "endpoints": [{ "from": "engineering_practice", "to": "software_framework" }, { "from": "research_paper", "to": "software_framework" }, { "from": "software_framework", "to": "software_framework" }, { "from": "system", "to": "concept" }, { "from": "system", "to": "software_framework" }], "requiresEvidence": true },
+    { "type": "derived_from", "endpoints": [{ "from": "concept", "to": "media" }, { "from": "engineering_practice", "to": "media" }, { "from": "engineering_practice", "to": "research_paper" }, { "from": "software_framework", "to": "media" }], "requiresEvidence": true },
+    { "type": "sourced_from", "from": "media", "to": "source", "requiresEvidence": true },
+    { "type": "introduces", "endpoints": [{ "from": "media", "to": "engineering_practice" }, { "from": "media", "to": "system" }], "requiresEvidence": true },
+    { "type": "implemented_by", "endpoints": [{ "from": "concept", "to": "software_framework" }, { "from": "engineering_practice", "to": "system" }], "requiresEvidence": true },
+    { "type": "supports", "endpoints": [{ "from": "company", "to": "concept" }, { "from": "engineering_practice", "to": "engineering_practice" }], "requiresEvidence": true },
+    { "type": "depends_on", "from": "engineering_practice", "to": "engineering_practice", "requiresEvidence": true },
+    { "type": "introduced_by", "from": "system", "to": "media", "requiresEvidence": true },
+    { "type": "mentions", "from": "media", "to": "software_framework", "requiresEvidence": true }
+  ]
+}

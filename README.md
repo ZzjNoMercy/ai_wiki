@@ -27,8 +27,8 @@ The project does not use model memory to fill factual gaps. Every fact and relat
 | [`wiki/log.md`](wiki/log.md) | Append-only ingestion log |
 | [`raw/`](raw/) | Read-only source material and immutable snapshots |
 | [`raw/manifest.jsonl`](raw/manifest.jsonl) | Snapshot inventory and integrity metadata |
-| [`schema/`](schema/) | Page-type, relationship, and frontmatter constraints |
-| [`AGENTS.md`](AGENTS.md) | Operating contract and classification rules for AI agents |
+| [`wiki.schema.json`](wiki.schema.json) | The single page-type, directory, and frontmatter contract |
+| [`AGENTS.md`](AGENTS.md) | Operating and evidence boundaries for AI agents |
 
 The current knowledge base is primarily organized into:
 
@@ -50,10 +50,10 @@ Queries should read from `wiki/`, not from `raw/`. If the compiled Wiki does not
 
 ## Adding knowledge
 
-1. Read [`AGENTS.md`](AGENTS.md) and the active [`schema/brain.schema.yaml`](schema/brain.schema.yaml).
+1. Read [`AGENTS.md`](AGENTS.md) and the root [`wiki.schema.json`](wiki.schema.json).
 2. Select the authorized Raw snapshots and resolve their exact `snapshot_path` values in `raw/manifest.jsonl`.
 3. Plan long-lived entities, stable topics, page types, and relationships directly supported by evidence.
-4. Generate or update Wiki pages through the PuddingClaw staging and publishing workflow.
+4. Generate pages in an isolated candidate area; review the fixed candidate and Wiki diff before publishing.
 5. Update index coverage and append one ingestion entry to `wiki/log.md`.
 6. Before publishing, validate frontmatter, page paths, complete wikilinks, broken links, and factual attribution.
 
