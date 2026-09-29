@@ -7,3 +7,6 @@
 
 # PuddingClaw local runtime state, mirrors, and staging data
 .puddingclaw/
+
+# Local generated schema output; wiki.schema.json is the source of truth
+schema/
